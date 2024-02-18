@@ -374,12 +374,16 @@
               <tbody id="tbody" class="border-b-2 pb-5"></tbody>
             </table>
             <div
-              class="flex justify-between text-black font-inter font-medium mt-5"
+              class="flex justify-between text-black font-inter font-medium mt-5 border-b-2 border-dashed pb-3"
             >
               <p>Total Price</p>
               <p>BDT <span id="total-price">0</span></p>
             </div>
 
+            <div
+              id="discounted-price"
+              class="flex justify-between mt-3 text-xl font-medium"
+            ></div>
             <div id="coupne-div" class="flex justify-between mt-5">
               <input
                 id="coupon-field"
@@ -395,6 +399,7 @@
                 Apply
               </button>
             </div>
+
             <div
               class="flex justify-between text-black font-inter font-medium mt-5"
             >
@@ -424,7 +429,7 @@
             />
           </div>
           <button
-          disabled
+            disabled
             id="next-btn"
             class="btn bg-[#1DD100] w-full font-railway font-extrabold text-xl text-white mt-5"
           >
@@ -439,9 +444,7 @@
       <!-- ------------ -->
     </section>
     <!---page 03--->
-    <section
-    id="page-03"
-    class="min-h-screen bg-[#F2F1F1] hidden">
+    <section id="page-03" class="min-h-screen bg-[#F2F1F1] hidden">
       <div class="min-h-screen flex justify-center items-center">
         <div
           class="border-4 border-dashed flex flex-col justify-center items-center space-y-4 py-3"
@@ -457,8 +460,9 @@
             Shortly you will find a confirmation in your email.
           </p>
           <button
-          id="continue-btn"
-           class="text-white btn bg-[#27AE60] w-[30%] rounded-3xl">
+            id="continue-btn"
+            class="text-white btn bg-[#27AE60] w-[30%] rounded-3xl"
+          >
             Continue
           </button>
         </div>
