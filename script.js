@@ -1,7 +1,4 @@
 function buyTicket() {
-  addElementById("page-01");
-  removeElementById("page-02");
-  addElementById("page-03");
   setElementById("seat-left", 40);
   setElementById("seat-count", 0);
 }
@@ -121,11 +118,3 @@ document
       nextBtn.setAttribute("disabled", true);
     }
   });
-
-document.getElementById("next-btn").addEventListener("click", function () {
-  addElementById("page-02");
-  removeElementById("page-03");
-});
-document.getElementById("continue-btn").addEventListener("click", function () {
-  buyTicket();
-});

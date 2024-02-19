@@ -1,11 +1,3 @@
-function addElementById(elementId) {
-  const element = document.getElementById(elementId);
-  element.classList.add("hidden");
-}
-function removeElementById(elementId) {
-  const element = document.getElementById(elementId);
-  element.classList.remove("hidden");
-}
 function setElementById(elementId, value) {
   const element = document.getElementById(elementId);
   element.innerText = value;
@@ -16,7 +8,7 @@ function setBackgroundById(elementId) {
 }
 function setTextColorById(elementId) {
   const element = document.getElementById(elementId);
-  element.classList.add("text-white")
+  element.classList.add("text-white");
 }
 
 function ticketDown(elementId) {
